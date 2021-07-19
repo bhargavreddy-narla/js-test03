@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign up form</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width initial-scale=1 shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--css styling-->
+    <style type="text/css"></style>
+    <!--javascript styling-->
+    <script type="text/javascript">
+      function passing() {
+        if (
+          document.getElementById("pass").value ==
+          document.getElementById("conpass").value
+        ) {
+          document.getElementById("pass").style.borderColor = "green";
+          document.getElementById("conpass").style.borderColor = "green";
+        } else {
+          document.getElementById("pass").style.borderColor = "red";
+          document.getElementById("conpass").style.borderColor = "red";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 style="text-align: center">Sign up</h1>
+          <form>
+            <div class="form-group">
+              <label>Name</label>
+              <input
+                type="text"
+                name=""
+                value=""
+                placeholder="Bhargav Reddy"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name=""
+                value=""
+                placeholder="bhargav@gmail.com"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label>Phone number</label>
+              <input
+                type="text"
+                name=""
+                value=""
+                placeholder="3334445555"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group" onchange="passing()" ;>
+              <label>Password</label>
+              <input
+                type="password"
+                name=""
+                value=""
+                placeholder="********"
+                class="form-control"
+                id="pass"
+              />
+            </div>
+            <div class="form-group">
+              <label>Confirm password</label>
+              <input
+                type="password"
+                name=""
+                value=""
+                placeholder="********"
+                class="form-control"
+                id="conpass"
+              />
+            </div>
+            <a href="#" class="btn btn-primary">Sign up</a>
+          </form>
+
+          <script type="text/javascript"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
